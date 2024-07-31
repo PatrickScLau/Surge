@@ -9,7 +9,7 @@ $httpClient.get(url, function(error, response, data){
     let ip = jsonData.query
   body = {
     title: "Route Info",
-    content: `IP：${ip}\xa0✪、xa0${isp})\nLocation：${emoji}${country} - ${city}`,
+    content: `IP：${ip}\xa0✪\xa0${isp})\nLocation：${emoji}${country} - ${city}`,
     icon: "globe.asia.australia.fill"
   }
   $done(body);
