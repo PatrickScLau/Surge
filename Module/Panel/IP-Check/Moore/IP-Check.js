@@ -10,7 +10,7 @@ $httpClient.get(url, function(error, response, data){
   body = {
     title: "Route Info",
     content: `IP：${ip}\xa0✪\xa0${isp})\nLocation：${emoji}${country} - ${city}`,
-    icon: "globe.asia.australia.fill"
+    icon: "link.circle"
   }
   $done(body);
 });
