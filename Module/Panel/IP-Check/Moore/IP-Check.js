@@ -7,9 +7,10 @@ $httpClient.get(url, function(error, response, data){
     let city = jsonData.city
     let isp = jsonData.isp
     let ip = jsonData.query
+    let region = jsonData.regionName
   body = {
     title: "Route Info",
-    content: `IP：${ip}\xa0✪\xa0${isp})\nLocation：${emoji}${country} - ${city}`,
+    content: `IP:\xa0${ip}\xa0✪\xa0${isp}\nLocation:\xa0${city},\xa0${region},\xa0${country}${emoji}`,
     icon: "link.circle"
   }
   $done(body);
